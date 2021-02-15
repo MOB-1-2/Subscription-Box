@@ -44,9 +44,12 @@ class ViewController: UIViewController {
         view.addSubview(scrollView)
         setupScrollView()
         scrollView.addSubview(container)
-        
         setupContainer()
     
+        let firstPage = createOnboardingPage(message: "Tell us about your pet's personality", imageName: "dog", color: .blue)
+        let secondPage = createOnboardingPage(message: "Subscribe to your first box", imageName: "dog", color: .purple)
+        let thirdPage = createOnboardingPage(message: "Get snacks and toys your pet will love", imageName: "dog", color: .systemPink)
+        
         
         firstView = UIView()
         firstView.translatesAutoresizingMaskIntoConstraints = false
@@ -142,6 +145,11 @@ class ViewController: UIViewController {
         stackView.addArrangedSubview(imageView)
         imageView.heightAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 0.6).isActive = true
         stackView.addArrangedSubview(messageLabel)
+        
+        imageView.image = UIImage(named: imageName)
+        messageLabel.text = message
+        page.backgroundColor = color
+        
         return page
         
     }
