@@ -65,6 +65,19 @@ class ViewController: UIViewController {
         thirdView.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
         
         
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 20
+        stackView.distribution = .fill
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        firstView.addSubview(stackView)
+        
+        stackView.widthAnchor.constraint(equalTo: firstView.layoutMarginsGuide.widthAnchor, multiplier: 0.5).isActive = true
+        stackView.heightAnchor.constraint(equalTo: firstView.layoutMarginsGuide.heightAnchor, multiplier: 0.5).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: firstView.centerYAnchor).isActive = true
+        stackView.centerXAnchor.constraint(equalTo: firstView.centerXAnchor).isActive = true 
         
         
         
