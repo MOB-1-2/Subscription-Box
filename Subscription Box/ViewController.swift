@@ -9,8 +9,30 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var scrollView: UIScrollView!
-    var container: UIStackView!
+    
+    let scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.isPagingEnabled = true
+        scrollView.showsHorizontalScrollIndicator = false
+       
+        return scrollView
+        
+    }()
+    
+    
+    let container: UIStackView = {
+        let container = UIStackView()
+        
+        container.axis = .horizontal
+        container.spacing = 0
+        container.distribution = .fillEqually
+        container.translatesAutoresizingMaskIntoConstraints = false
+        
+        return container
+        
+    }()
     var firstView: UIView!
     var secondView: UIView!
     var thirdView: UIView!
@@ -18,30 +40,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView = UIScrollView()
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.isPagingEnabled = true
-        scrollView.showsHorizontalScrollIndicator = false
+       
         view.addSubview(scrollView)
-        
-        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        
-        container = UIStackView()
-        container.axis = .horizontal
-        container.spacing = 0
-        container.distribution = .fillEqually
-        container.translatesAutoresizingMaskIntoConstraints = false
+        setupScrollView()
         scrollView.addSubview(container)
         
-        container.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
-        container.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
-        container.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
-        container.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
-        container.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
-        
+        setupContainer()
+    
         
         firstView = UIView()
         firstView.translatesAutoresizingMaskIntoConstraints = false
@@ -96,15 +101,26 @@ class ViewController: UIViewController {
         stackView.addArrangedSubview(messageLabel)
         
         
-        
-        
-        
-        
-        
-        
     }
 
+    func setupScrollView() {
+        
+        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+    }
     
+    func setupContainer() {
+        
+        container.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
+        container.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
+        container.topAnchor.constraint(equalTo: scrollView.topAnchor).isActive = true
+        container.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
+        container.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
+        
+    }
 
 }
 
