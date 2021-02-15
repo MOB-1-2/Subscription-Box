@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         stackView.distribution = .fill
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
-        
+        // First View
         firstView.addSubview(stackView)
         
         stackView.widthAnchor.constraint(equalTo: firstView.layoutMarginsGuide.widthAnchor, multiplier: 0.5).isActive = true
@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "dog")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         
