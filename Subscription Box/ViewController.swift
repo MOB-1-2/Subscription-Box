@@ -33,14 +33,10 @@ class ViewController: UIViewController {
         return container
         
     }()
-    var firstView: UIView!
-    var secondView: UIView!
-    var thirdView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
         view.addSubview(scrollView)
         setupScrollView()
         scrollView.addSubview(container)
@@ -58,31 +54,6 @@ class ViewController: UIViewController {
             page.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
             
         }
-        
-        firstView = UIView()
-        firstView.translatesAutoresizingMaskIntoConstraints = false
-        firstView.backgroundColor = UIColor.systemBlue
-        container.addArrangedSubview(firstView)
-        
-        firstView.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        
-        secondView = UIView()
-        secondView.translatesAutoresizingMaskIntoConstraints = false
-        secondView.backgroundColor = UIColor.systemPurple
-        container.addArrangedSubview(secondView)
-        
-        secondView.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        
-        thirdView = UIView()
-        thirdView.translatesAutoresizingMaskIntoConstraints = false
-        thirdView.backgroundColor = UIColor.systemPink
-        container.addArrangedSubview(thirdView)
-        
-        thirdView.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
-        
-        
-        
-        
         
     }
 
