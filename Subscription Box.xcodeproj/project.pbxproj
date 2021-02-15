@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7010543725DAC9AB00C9DD6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010543625DAC9AB00C9DD6B /* AppDelegate.swift */; };
+		7010543925DAC9AB00C9DD6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010543825DAC9AB00C9DD6B /* SceneDelegate.swift */; };
+		7010543B25DAC9AB00C9DD6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010543A25DAC9AB00C9DD6B /* ViewController.swift */; };
+		7010543E25DAC9AB00C9DD6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7010543C25DAC9AB00C9DD6B /* Main.storyboard */; };
+		7010544125DAC9AB00C9DD6B /* Subscription_Box.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7010543F25DAC9AB00C9DD6B /* Subscription_Box.xcdatamodeld */; };
+		7010544325DAC9AD00C9DD6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7010544225DAC9AD00C9DD6B /* Assets.xcassets */; };
+		7010544625DAC9AD00C9DD6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7010544425DAC9AD00C9DD6B /* LaunchScreen.storyboard */; };
+		7010545125DAC9AD00C9DD6B /* Subscription_BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010545025DAC9AD00C9DD6B /* Subscription_BoxTests.swift */; };
+		7010545C25DAC9AD00C9DD6B /* Subscription_BoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010545B25DAC9AD00C9DD6B /* Subscription_BoxUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7010544D25DAC9AD00C9DD6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7010542B25DAC9AB00C9DD6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7010543225DAC9AB00C9DD6B;
+			remoteInfo = "Subscription Box";
+		};
+		7010545825DAC9AD00C9DD6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7010542B25DAC9AB00C9DD6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7010543225DAC9AB00C9DD6B;
+			remoteInfo = "Subscription Box";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7010543325DAC9AB00C9DD6B /* Subscription Box.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Subscription Box.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7010543625DAC9AB00C9DD6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7010543825DAC9AB00C9DD6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7010543A25DAC9AB00C9DD6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7010543D25DAC9AB00C9DD6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7010544025DAC9AB00C9DD6B /* Subscription_Box.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Subscription_Box.xcdatamodel; sourceTree = "<group>"; };
+		7010544225DAC9AD00C9DD6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7010544525DAC9AD00C9DD6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7010544725DAC9AD00C9DD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7010544C25DAC9AD00C9DD6B /* Subscription BoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subscription BoxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7010545025DAC9AD00C9DD6B /* Subscription_BoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription_BoxTests.swift; sourceTree = "<group>"; };
+		7010545225DAC9AD00C9DD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7010545725DAC9AD00C9DD6B /* Subscription BoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subscription BoxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7010545B25DAC9AD00C9DD6B /* Subscription_BoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription_BoxUITests.swift; sourceTree = "<group>"; };
+		7010545D25DAC9AD00C9DD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7010543025DAC9AB00C9DD6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7010544925DAC9AD00C9DD6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7010545425DAC9AD00C9DD6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7010542A25DAC9AB00C9DD6B = {
+			isa = PBXGroup;
+			children = (
+				7010543525DAC9AB00C9DD6B /* Subscription Box */,
+				7010544F25DAC9AD00C9DD6B /* Subscription BoxTests */,
+				7010545A25DAC9AD00C9DD6B /* Subscription BoxUITests */,
+				7010543425DAC9AB00C9DD6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7010543425DAC9AB00C9DD6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7010543325DAC9AB00C9DD6B /* Subscription Box.app */,
+				7010544C25DAC9AD00C9DD6B /* Subscription BoxTests.xctest */,
+				7010545725DAC9AD00C9DD6B /* Subscription BoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7010543525DAC9AB00C9DD6B /* Subscription Box */ = {
+			isa = PBXGroup;
+			children = (
+				7010543625DAC9AB00C9DD6B /* AppDelegate.swift */,
+				7010543825DAC9AB00C9DD6B /* SceneDelegate.swift */,
+				7010543A25DAC9AB00C9DD6B /* ViewController.swift */,
+				7010543C25DAC9AB00C9DD6B /* Main.storyboard */,
+				7010544225DAC9AD00C9DD6B /* Assets.xcassets */,
+				7010544425DAC9AD00C9DD6B /* LaunchScreen.storyboard */,
+				7010544725DAC9AD00C9DD6B /* Info.plist */,
+				7010543F25DAC9AB00C9DD6B /* Subscription_Box.xcdatamodeld */,
+			);
+			path = "Subscription Box";
+			sourceTree = "<group>";
+		};
+		7010544F25DAC9AD00C9DD6B /* Subscription BoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				7010545025DAC9AD00C9DD6B /* Subscription_BoxTests.swift */,
+				7010545225DAC9AD00C9DD6B /* Info.plist */,
+			);
+			path = "Subscription BoxTests";
+			sourceTree = "<group>";
+		};
+		7010545A25DAC9AD00C9DD6B /* Subscription BoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7010545B25DAC9AD00C9DD6B /* Subscription_BoxUITests.swift */,
+				7010545D25DAC9AD00C9DD6B /* Info.plist */,
+			);
+			path = "Subscription BoxUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7010543225DAC9AB00C9DD6B /* Subscription Box */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7010546025DAC9AD00C9DD6B /* Build configuration list for PBXNativeTarget "Subscription Box" */;
+			buildPhases = (
+				7010542F25DAC9AB00C9DD6B /* Sources */,
+				7010543025DAC9AB00C9DD6B /* Frameworks */,
+				7010543125DAC9AB00C9DD6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Subscription Box";
+			productName = "Subscription Box";
+			productReference = 7010543325DAC9AB00C9DD6B /* Subscription Box.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7010544B25DAC9AD00C9DD6B /* Subscription BoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7010546325DAC9AD00C9DD6B /* Build configuration list for PBXNativeTarget "Subscription BoxTests" */;
+			buildPhases = (
+				7010544825DAC9AD00C9DD6B /* Sources */,
+				7010544925DAC9AD00C9DD6B /* Frameworks */,
+				7010544A25DAC9AD00C9DD6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7010544E25DAC9AD00C9DD6B /* PBXTargetDependency */,
+			);
+			name = "Subscription BoxTests";
+			productName = "Subscription BoxTests";
+			productReference = 7010544C25DAC9AD00C9DD6B /* Subscription BoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7010545625DAC9AD00C9DD6B /* Subscription BoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7010546625DAC9AD00C9DD6B /* Build configuration list for PBXNativeTarget "Subscription BoxUITests" */;
+			buildPhases = (
+				7010545325DAC9AD00C9DD6B /* Sources */,
+				7010545425DAC9AD00C9DD6B /* Frameworks */,
+				7010545525DAC9AD00C9DD6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7010545925DAC9AD00C9DD6B /* PBXTargetDependency */,
+			);
+			name = "Subscription BoxUITests";
+			productName = "Subscription BoxUITests";
+			productReference = 7010545725DAC9AD00C9DD6B /* Subscription BoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7010542B25DAC9AB00C9DD6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7010543225DAC9AB00C9DD6B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7010544B25DAC9AD00C9DD6B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7010543225DAC9AB00C9DD6B;
+					};
+					7010545625DAC9AD00C9DD6B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7010543225DAC9AB00C9DD6B;
+					};
+				};
+			};
+			buildConfigurationList = 7010542E25DAC9AB00C9DD6B /* Build configuration list for PBXProject "Subscription Box" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7010542A25DAC9AB00C9DD6B;
+			productRefGroup = 7010543425DAC9AB00C9DD6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7010543225DAC9AB00C9DD6B /* Subscription Box */,
+				7010544B25DAC9AD00C9DD6B /* Subscription BoxTests */,
+				7010545625DAC9AD00C9DD6B /* Subscription BoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7010543125DAC9AB00C9DD6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7010544625DAC9AD00C9DD6B /* LaunchScreen.storyboard in Resources */,
+				7010544325DAC9AD00C9DD6B /* Assets.xcassets in Resources */,
+				7010543E25DAC9AB00C9DD6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7010544A25DAC9AD00C9DD6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7010545525DAC9AD00C9DD6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7010542F25DAC9AB00C9DD6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7010543B25DAC9AB00C9DD6B /* ViewController.swift in Sources */,
+				7010543725DAC9AB00C9DD6B /* AppDelegate.swift in Sources */,
+				7010544125DAC9AB00C9DD6B /* Subscription_Box.xcdatamodeld in Sources */,
+				7010543925DAC9AB00C9DD6B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7010544825DAC9AD00C9DD6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7010545125DAC9AD00C9DD6B /* Subscription_BoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7010545325DAC9AD00C9DD6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7010545C25DAC9AD00C9DD6B /* Subscription_BoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7010544E25DAC9AD00C9DD6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7010543225DAC9AB00C9DD6B /* Subscription Box */;
+			targetProxy = 7010544D25DAC9AD00C9DD6B /* PBXContainerItemProxy */;
+		};
+		7010545925DAC9AD00C9DD6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7010543225DAC9AB00C9DD6B /* Subscription Box */;
+			targetProxy = 7010545825DAC9AD00C9DD6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7010543C25DAC9AB00C9DD6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7010543D25DAC9AB00C9DD6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7010544425DAC9AD00C9DD6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7010544525DAC9AD00C9DD6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7010545E25DAC9AD00C9DD6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7010545F25DAC9AD00C9DD6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7010546125DAC9AD00C9DD6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = "Subscription Box/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryancornel.makeschool.Subscription-Box";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7010546225DAC9AD00C9DD6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = "Subscription Box/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryancornel.makeschool.Subscription-Box";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7010546425DAC9AD00C9DD6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = "Subscription BoxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryancornel.makeschool.Subscription-BoxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subscription Box.app/Subscription Box";
+			};
+			name = Debug;
+		};
+		7010546525DAC9AD00C9DD6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = "Subscription BoxTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryancornel.makeschool.Subscription-BoxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Subscription Box.app/Subscription Box";
+			};
+			name = Release;
+		};
+		7010546725DAC9AD00C9DD6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = "Subscription BoxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryancornel.makeschool.Subscription-BoxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Subscription Box";
+			};
+			name = Debug;
+		};
+		7010546825DAC9AD00C9DD6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YPMPDYQ53U;
+				INFOPLIST_FILE = "Subscription BoxUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ryancornel.makeschool.Subscription-BoxUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Subscription Box";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7010542E25DAC9AB00C9DD6B /* Build configuration list for PBXProject "Subscription Box" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7010545E25DAC9AD00C9DD6B /* Debug */,
+				7010545F25DAC9AD00C9DD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7010546025DAC9AD00C9DD6B /* Build configuration list for PBXNativeTarget "Subscription Box" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7010546125DAC9AD00C9DD6B /* Debug */,
+				7010546225DAC9AD00C9DD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7010546325DAC9AD00C9DD6B /* Build configuration list for PBXNativeTarget "Subscription BoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7010546425DAC9AD00C9DD6B /* Debug */,
+				7010546525DAC9AD00C9DD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7010546625DAC9AD00C9DD6B /* Build configuration list for PBXNativeTarget "Subscription BoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7010546725DAC9AD00C9DD6B /* Debug */,
+				7010546825DAC9AD00C9DD6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7010543F25DAC9AB00C9DD6B /* Subscription_Box.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7010544025DAC9AB00C9DD6B /* Subscription_Box.xcdatamodel */,
+			);
+			currentVersion = 7010544025DAC9AB00C9DD6B /* Subscription_Box.xcdatamodel */;
+			path = Subscription_Box.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7010542B25DAC9AB00C9DD6B /* Project object */;
+}
