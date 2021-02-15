@@ -41,6 +41,21 @@ class ViewController: UIViewController {
         container.heightAnchor.constraint(equalTo: scrollView.heightAnchor).isActive = true
         
         
+        firstView = UIView()
+        firstView.translatesAutoresizingMaskIntoConstraints = false
+        firstView.backgroundColor = UIColor.systemBlue
+        container.addArrangedSubview(thirdView)
+        
+        secondView = UIView()
+        secondView.translatesAutoresizingMaskIntoConstraints = false
+        secondView.backgroundColor = UIColor.systemPurple
+        container.addArrangedSubview(secondView)
+        
+        thirdView = UIView()
+        thirdView.translatesAutoresizingMaskIntoConstraints = false
+        thirdView.backgroundColor = UIColor.systemPink
+        container.addArrangedSubview(thirdView)
+        
         
         
         
