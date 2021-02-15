@@ -46,15 +46,21 @@ class ViewController: UIViewController {
         firstView.backgroundColor = UIColor.systemBlue
         container.addArrangedSubview(thirdView)
         
+        firstView.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
+        
         secondView = UIView()
         secondView.translatesAutoresizingMaskIntoConstraints = false
         secondView.backgroundColor = UIColor.systemPurple
         container.addArrangedSubview(secondView)
         
+        secondView.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
+        
         thirdView = UIView()
         thirdView.translatesAutoresizingMaskIntoConstraints = false
         thirdView.backgroundColor = UIColor.systemPink
         container.addArrangedSubview(thirdView)
+        
+        thirdView.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true 
         
         
         
