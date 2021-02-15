@@ -77,7 +77,27 @@ class ViewController: UIViewController {
         stackView.widthAnchor.constraint(equalTo: firstView.layoutMarginsGuide.widthAnchor, multiplier: 0.5).isActive = true
         stackView.heightAnchor.constraint(equalTo: firstView.layoutMarginsGuide.heightAnchor, multiplier: 0.5).isActive = true
         stackView.centerYAnchor.constraint(equalTo: firstView.centerYAnchor).isActive = true
-        stackView.centerXAnchor.constraint(equalTo: firstView.centerXAnchor).isActive = true 
+        stackView.centerXAnchor.constraint(equalTo: firstView.centerXAnchor).isActive = true
+        
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        stackView.addArrangedSubview(imageView)
+        
+        let messageLabel = UILabel()
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "Helvetica", size: 20)
+        messageLabel.textColor = UIColor(white: 1.0, alpha: 0.8)
+        messageLabel.text = "Here goes a message"
+        stackView.addArrangedSubview(messageLabel)
+        
+        
+        
+        
+        
         
         
         
