@@ -16,6 +16,7 @@
 		7010544625DAC9AD00C9DD6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7010544425DAC9AD00C9DD6B /* LaunchScreen.storyboard */; };
 		7010545125DAC9AD00C9DD6B /* Subscription_BoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010545025DAC9AD00C9DD6B /* Subscription_BoxTests.swift */; };
 		7010545C25DAC9AD00C9DD6B /* Subscription_BoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010545B25DAC9AD00C9DD6B /* Subscription_BoxUITests.swift */; };
+		7010546D25DB3AD900C9DD6B /* AlienCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7010546C25DB3AD900C9DD6B /* AlienCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7010545725DAC9AD00C9DD6B /* Subscription BoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Subscription BoxUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7010545B25DAC9AD00C9DD6B /* Subscription_BoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription_BoxUITests.swift; sourceTree = "<group>"; };
 		7010545D25DAC9AD00C9DD6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7010546C25DB3AD900C9DD6B /* AlienCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				7010543625DAC9AB00C9DD6B /* AppDelegate.swift */,
 				7010543825DAC9AB00C9DD6B /* SceneDelegate.swift */,
 				7010543A25DAC9AB00C9DD6B /* ViewController.swift */,
+				7010546C25DB3AD900C9DD6B /* AlienCellTableViewCell.swift */,
 				7010543C25DAC9AB00C9DD6B /* Main.storyboard */,
 				7010544225DAC9AD00C9DD6B /* Assets.xcassets */,
 				7010544425DAC9AD00C9DD6B /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			files = (
 				7010543B25DAC9AB00C9DD6B /* ViewController.swift in Sources */,
 				7010543725DAC9AB00C9DD6B /* AppDelegate.swift in Sources */,
+				7010546D25DB3AD900C9DD6B /* AlienCellTableViewCell.swift in Sources */,
 				7010544125DAC9AB00C9DD6B /* Subscription_Box.xcdatamodeld in Sources */,
 				7010543925DAC9AB00C9DD6B /* SceneDelegate.swift in Sources */,
 			);
