@@ -81,11 +81,11 @@ class ViewController: UIViewController {
         
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "dog")
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        
+        imageView.image = UIImage(named: "dog")
         stackView.addArrangedSubview(imageView)
+        
+        imageView.heightAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 0.6).isActive = true
         
         let messageLabel = UILabel()
         messageLabel.numberOfLines = 0
