@@ -114,13 +114,15 @@ class ViewController: UIViewController {
             return messageLabel
         }()
         
+        page.addSubview(stackView)
+        
         stackView.widthAnchor.constraint(equalTo: page.layoutMarginsGuide.widthAnchor, multiplier: 0.5).isActive = true
         stackView.heightAnchor.constraint(equalTo: page.layoutMarginsGuide.heightAnchor, multiplier: 0.5).isActive = true
         stackView.centerYAnchor.constraint(equalTo: page.centerYAnchor).isActive = true
         stackView.centerXAnchor.constraint(equalTo: page.centerXAnchor).isActive = true
         
        
-        firstView.addSubview(stackView)
+        
         stackView.addArrangedSubview(imageView)
         imageView.heightAnchor.constraint(equalTo: stackView.heightAnchor, multiplier: 0.6).isActive = true
         stackView.addArrangedSubview(messageLabel)
