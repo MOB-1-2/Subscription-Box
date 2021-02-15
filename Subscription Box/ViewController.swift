@@ -50,6 +50,14 @@ class ViewController: UIViewController {
         let secondPage = createOnboardingPage(message: "Subscribe to your first box", imageName: "dog", color: .purple)
         let thirdPage = createOnboardingPage(message: "Get snacks and toys your pet will love", imageName: "dog", color: .systemPink)
         
+        let pagesArray = [firstPage, secondPage, thirdPage]
+        
+        for page in pagesArray {
+            page.translatesAutoresizingMaskIntoConstraints = false
+            container.addArrangedSubview(page)
+            page.widthAnchor.constraint(equalToConstant: view.frame.size.width).isActive = true
+            
+        }
         
         firstView = UIView()
         firstView.translatesAutoresizingMaskIntoConstraints = false
