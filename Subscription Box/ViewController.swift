@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         
         scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.isPagingEnabled = true 
+        scrollView.isPagingEnabled = true
+        scrollView.showsHorizontalScrollIndicator = false
         view.addSubview(scrollView)
         
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
