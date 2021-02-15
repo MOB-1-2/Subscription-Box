@@ -7,7 +7,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return alienArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AlienCell", for: indexPath)
+        cell.textLabel?.text = "\(indexPath.row) \(alienArray[indexPath.row])"
+        return cell
+        
+    }
+    
+    let alienArray = [String](repeating: "👽 invading  🌎", count: 100)
+    
     
     
     let scrollView: UIScrollView = {
@@ -36,8 +52,10 @@ class ViewController: UIViewController {
     
     let table: UITableView = {
         let table = UITableView()
+        let AlienCell = ""
         table.translatesAutoresizingMaskIntoConstraints = false
         table.rowHeight = 100
+        table.register(AlienCell.self, forCellReuseIdentifier: "AlienCell")
         return table
     }()
 
@@ -71,6 +89,9 @@ class ViewController: UIViewController {
         table.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
         table.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor).isActive = true
         table.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor).isActive = true
+        
+        table.delegate = self
+        table.dataSource = self
     }
 
     func setupScrollView() {
