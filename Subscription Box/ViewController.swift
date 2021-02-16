@@ -52,10 +52,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let table: UITableView = {
         let table = UITableView()
-        let AlienCell = ""
         table.translatesAutoresizingMaskIntoConstraints = false
         table.rowHeight = 100
-        table.register(AlienCell.self, forCellReuseIdentifier: "AlienCell")
+        table.register(AlienCellTableViewCell.self, forCellReuseIdentifier: "AlienCell")
+        
         return table
     }()
 
@@ -89,6 +89,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
         table.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor).isActive = true
         table.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor).isActive = true
+        
         
         table.delegate = self
         table.dataSource = self
@@ -170,6 +171,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return page
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alertController = UIAlertController(title: "Hello", message: "You've tapped in the \(indexPath.row) row, from section \(indexPath.section)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
+                UIAlertAction in
+        }
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 
 }
