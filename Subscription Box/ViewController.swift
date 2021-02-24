@@ -6,7 +6,7 @@
 //
 
 import UIKit
- 
+     
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -79,7 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
         let firstPage = createOnboardingPage(message: "Tell us about your pet's personality", imageName: "dog", color: .blue)
         let secondPage = createOnboardingPage(message: "Subscribe to your first box", imageName: "dog", color: .purple)
-        let thirdPage = createOnboardingPage(message: "Get snacks and toys your pet will love", imageName: "dog", color: .systemPink)
+        let thirdPage = createOnboardingPage(message: "Get all the snacks and toys your pet will love", imageName: "dog", color: .systemPink)
         
         let pagesArray = [firstPage, secondPage, thirdPage]
         
