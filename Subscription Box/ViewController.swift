@@ -7,8 +7,8 @@
 
 import UIKit
      
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSource*/ {
+    /*
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return alienArray.count
@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     let alienArray = [String](repeating: "👽 invading  🌎", count: 100)
-    
+    */
     
     
     let scrollView: UIScrollView = {
@@ -44,6 +44,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
        
         return scrollView
         
+    }()
+    
+    let button: UIButton = {
+        let button = UIButton()
+        
+        
+        return button
     }()
     
     
