@@ -59,14 +59,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }()
     
-    let table: UITableView = {
+    /*let table: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
         table.rowHeight = 100
         table.register(AlienCellTableViewCell.self, forCellReuseIdentifier: "AlienCell")
         
         return table
-    }()
+    }() */
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         setupScrollView()
         scrollView.addSubview(container)
         setupContainer()
-        setTable()
+        //setTable()
     
         let firstPage = createOnboardingPage(message: "Tell us about your pet's personality", imageName: "dog", color: .blue)
         let secondPage = createOnboardingPage(message: "Subscribe to your first box", imageName: "dog", color: .purple)
@@ -92,6 +92,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    /*
     func setTable(){
         self.view.addSubview(table)
         table.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
@@ -103,6 +104,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.delegate = self
         table.dataSource = self
     }
+     */
 
     func setupScrollView() {
         
