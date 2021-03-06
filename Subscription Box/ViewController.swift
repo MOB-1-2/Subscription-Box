@@ -7,32 +7,8 @@
 
 import UIKit
      
-class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSource*/ {
-    /*
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return alienArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AlienCell", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row) \(alienArray[indexPath.row])"
-        return cell
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alertController = UIAlertController(title: "Hello", message: "You've tapped in the \(indexPath.row) row, from section \(indexPath.section)", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) {
-                UIAlertAction in
-        }
-        alertController.addAction(okAction)
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-    let alienArray = [String](repeating: "👽 invading  🌎", count: 100)
-    */
+class ViewController: UIViewController{
+
     
     
     let scrollView: UIScrollView = {
@@ -46,12 +22,6 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
         
     }()
     
-    let button: UIButton = {
-        let button = UIButton()
-        
-        
-        return button
-    }()
     
     
     let container: UIStackView = {
@@ -66,14 +36,6 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
         
     }()
     
-    /*let table: UITableView = {
-        let table = UITableView()
-        table.translatesAutoresizingMaskIntoConstraints = false
-        table.rowHeight = 100
-        table.register(AlienCellTableViewCell.self, forCellReuseIdentifier: "AlienCell")
-        
-        return table
-    }() */
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,13 +44,15 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
         setupScrollView()
         scrollView.addSubview(container)
         setupContainer()
+        
         //setTable()
     
+        let startPage = createOnboardingPage(message: "", imageName: "box", color: .cyan)
         let firstPage = createOnboardingPage(message: "Tell us about your pet's personality", imageName: "dog", color: .blue)
         let secondPage = createOnboardingPage(message: "Subscribe to your first box", imageName: "dog", color: .purple)
         let thirdPage = createOnboardingPage(message: "Get all the snacks and toys your pet will love", imageName: "dog", color: .systemPink)
         
-        let pagesArray = [firstPage, secondPage, thirdPage]
+        let pagesArray = [startPage, firstPage, secondPage, thirdPage]
         
         for page in pagesArray {
             page.translatesAutoresizingMaskIntoConstraints = false
@@ -99,19 +63,6 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
         
     }
     
-    /*
-    func setTable(){
-        self.view.addSubview(table)
-        table.trailingAnchor.constraint(equalTo: view.layoutMarginsGuide.trailingAnchor).isActive = true
-        table.leadingAnchor.constraint(equalTo: view.layoutMarginsGuide.leadingAnchor).isActive = true
-        table.topAnchor.constraint(equalTo: view.layoutMarginsGuide.topAnchor).isActive = true
-        table.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor).isActive = true
-        
-        
-        table.delegate = self
-        table.dataSource = self
-    }
-     */
 
     func setupScrollView() {
         
@@ -190,6 +141,8 @@ class ViewController: UIViewController/*, UITableViewDelegate, UITableViewDataSo
         return page
         
     }
+    
+
 
 }
 
